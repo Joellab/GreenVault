@@ -40,7 +40,7 @@ public enum ResultCodeEnum {
 
     SYSTEM_EXCEPTION(2004, "系统内部错误"),
 
-    REDIS_EXCEPTION(3001, "系统内部错误"),
+    REDIS_EXCEPTION(3001, "缓存系统错误"),
 
     ERROR(5000, "未知错误");
 
