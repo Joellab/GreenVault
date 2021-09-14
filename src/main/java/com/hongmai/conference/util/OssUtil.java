@@ -29,8 +29,6 @@ public class OssUtil {
                 .credentials(access, secret)
                 .build();
         // 初始化Bucket
-
-
         initBucket();
     }
 
