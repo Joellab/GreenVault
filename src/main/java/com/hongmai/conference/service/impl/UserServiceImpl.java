@@ -85,14 +85,17 @@ public class UserServiceImpl extends ServiceImpl<CpBaseUserMapper, CpBaseUser> i
         } catch (Exception e) {
             throw new ApiException(ResultCodeEnum.DATABASE_EXCEPTION);
         }
-        //判断用户是否被禁用
-         if(cpBaseUser.getStatus().equals(ConstantEnum.INVALID_USER.getValue())) {
-            throw new ApiException(ResultCodeEnum.USER_INVALID);
-        }
+
         //判断用户密码是否正确
         if (cpBaseUser == null || !passwordEncoder.matches(param.getPassword(), cpBaseUser.getPassword())) {
             throw new ApiException(ResultCodeEnum.LOGIN_FAILED);
         }
+
+        //判断用户是否被禁用
+        if(cpBaseUser.getStatus().equals(ConstantEnum.INVALID_USER.getValue())) {
+            throw new ApiException(ResultCodeEnum.USER_INVALID);
+        }
+
         //删除无效用户缓存
         userUtil.validSpecificUserLoginStatus(cpBaseUser.getUsername());
         //生成JWT并储存用户数据
