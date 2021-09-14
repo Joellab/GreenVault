@@ -8,15 +8,10 @@ package com.hongmai.conference.util;
 
 import com.hongmai.conference.enums.ResultCodeEnum;
 import com.hongmai.conference.exception.ApiException;
-import com.sun.xml.internal.org.jvnet.mimepull.MIMEMessage;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.MailMessage;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
-
-import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
 import static cn.hutool.core.date.DateTime.now;
