@@ -18,7 +18,7 @@ public enum ConstantEnum {
 
     WEB_RESET_PASSWORD_ROUTE("/reset-password"),
 
-    DEFAULT_AVATAR_URL("https://conf.dev.web.joellab.com/image/avatar_default.png"),
+    DEFAULT_AVATAR_URL("https://oss.hk.joellab.com/clonfer/avatar_default.png"),
 
     DEFAULT_ROLE("1"),
 

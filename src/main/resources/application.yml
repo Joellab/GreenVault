@@ -46,9 +46,9 @@ mybatis-plus:
 
 minio:
   url: http://oss.hk.joellab.com:9000 # 服务地址
-  access: clonf # 账号
-  secret: 12321Wjwwjw # 密码
-  bucket: clonf # Bucket
+  access: clonfer # 账号
+  secret: XRYnIjl3 # 密码
+  bucket: clonfer # Bucket
 
 security:
   jwt:
