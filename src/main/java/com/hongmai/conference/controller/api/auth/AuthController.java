@@ -43,5 +43,6 @@ public class AuthController {
     @PostMapping("/resetPassword/sendResetPasswordEmail")
     public void sendResetPasswordEmail(@RequestBody @Validated ResetPasswordRequestParam param) {
         userService.sendResetPasswordEmail(param);
+
     }
 }
