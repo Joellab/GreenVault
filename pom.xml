@@ -115,7 +115,7 @@
         <dependency>
             <groupId>io.minio</groupId>
             <artifactId>minio</artifactId>
-            <version>8.2.1</version>
+            <version>8.2.2</version>
         </dependency>
         <!-- I/O工具包，方便I/O操作-->
         <dependency>
