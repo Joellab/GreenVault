@@ -66,7 +66,7 @@
     </appender>
 
     <!--用来设置某一个包或具体的某一个类的日志打印级别-->
-    <logger name="com.hongmai.conference.mapper" level="DEBUG"/>
+    <logger name="com.hongmai.clonfer.mapper" level="DEBUG"/>
 
     <!--必填标签，用来指定最基础的日志输出级别-->
     <root level="info">
