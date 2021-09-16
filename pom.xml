@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hongmai</groupId>
-    <artifactId>conference</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>ConferencePlus</name>
+    <artifactId>clonfer</artifactId>
+    <version>0.0.1</version>
+    <name>Clonfer</name>
     <description>Conference Management System</description>
 
     <properties>
