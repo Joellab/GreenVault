@@ -128,10 +128,4 @@ public class SwaggerConfig implements WebMvcConfigurer {
             e.printStackTrace();
         }
     }
-
-    @GetMapping(value = "/doc")
-    @Operation(hidden = true)
-    public ModelAndView home() {
-        return new ModelAndView("redirect:/swagger-ui/index.html");
-    }
 }
