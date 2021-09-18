@@ -1,6 +1,8 @@
 server:
-  local_url: http://localhost
-  dev_url: https://clonfer.dev.api.joellab.com
+  local:
+    url: http://localhost
+  dev:
+    url: https://clonfer.dev.api.joellab.com
   port: 8090
 
 spring:
@@ -65,5 +67,5 @@ swagger:
   application-name: ${spring.application.name}
   application-version: ${spring.application.version}
   application-description: Clonfer云展会API接口文档
-  try-host: http://${server.dev.url}:${server.port}
+  try-host: ${server.dev.url}:${server.port}
 
