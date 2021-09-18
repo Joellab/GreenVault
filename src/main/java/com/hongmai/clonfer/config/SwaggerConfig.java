@@ -1,17 +1,15 @@
 package com.hongmai.clonfer.config;
 
-import io.swagger.annotations.ApiOperation;
+import io.swagger.models.auth.In;
 import io.swagger.v3.oas.annotations.Operation;
-import org.springframework.beans.factory.annotation.Value;
+import org.apache.commons.lang3.reflect.FieldUtils;
+import org.springframework.boot.SpringBootVersion;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.StringUtils;
+import org.springframework.util.ReflectionUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -20,12 +18,10 @@ import springfox.documentation.oas.annotations.EnableOpenApi;
 import springfox.documentation.service.*;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spi.service.contexts.SecurityContext;
-import springfox.documentation.spring.web.plugins.ApiSelectorBuilder;
 import springfox.documentation.spring.web.plugins.Docket;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.lang.reflect.Field;
+import java.util.*;
 
 /**
  * @author JiaweiWang
@@ -37,69 +33,103 @@ import java.util.List;
 @Controller
 public class SwaggerConfig implements WebMvcConfigurer {
 
-    private final String baseUrl;
+    private final SwaggerProperties swaggerProperties;
 
-    public SwaggerConfig(
-            @Value("${springfox.documentation.swagger-ui.base-url:}") String baseUrl) {
-        this.baseUrl = baseUrl;
+    public SwaggerConfig(SwaggerProperties swaggerProperties) {
+        this.swaggerProperties = swaggerProperties;
     }
 
     @Bean
     public Docket createRestApi() {
-        Docket docket = new Docket(DocumentationType.OAS_30);
+        return new Docket(DocumentationType.OAS_30).pathMapping("/")
 
-        ApiInfoBuilder builder = new ApiInfoBuilder();
-        builder.title("Clonfer API");
-        ApiInfo apiInfo = builder.build();
-        docket.apiInfo(apiInfo);
-        ApiSelectorBuilder selectorBuilder = docket.select();
-        selectorBuilder.paths(PathSelectors.any());
-        //使用@ApiOperation的方法会被提取到REST API中
-        //selectorBuilder.apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class));
-        docket = selectorBuilder.build();
-        List<SecurityScheme> apiKeys = Collections.singletonList(HttpAuthenticationScheme.JWT_BEARER_BUILDER
-                .name("token")
-                .build());
-        docket.securitySchemes(apiKeys);
-        AuthorizationScope scope = new AuthorizationScope("global", "accessEverything");
-        AuthorizationScope[] scopeArray = {scope};
-        SecurityReference reference = new SecurityReference("token", scopeArray);
-        List refList = new ArrayList();
-        refList.add(reference);
-        SecurityContext context = SecurityContext.builder().securityReferences(refList).build();
-        List cxtList = new ArrayList();
-        cxtList.add(context);
-        docket.securityContexts(cxtList);
+                // 定义是否开启swagger，false为关闭，可以通过变量控制
+                .enable(swaggerProperties.getEnable())
 
-        return docket;
+                // 将api的元信息设置为包含在json ResourceListing响应中。
+                .apiInfo(apiInfo())
+
+                // 接口调试地址
+                .host(swaggerProperties.getTryHost())
+
+                // 选择哪些接口作为swagger的doc发布
+                .select()
+                .apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.any())
+                .build()
+
+                // 支持的通讯协议集合
+                .protocols(newHashSet("https", "http"))
+
+                // 授权信息设置，必要的header token等认证信息
+                .securitySchemes(securitySchemes())
+
+                // 授权信息全局应用
+                .securityContexts(securityContexts());
     }
 
+    /**
+     * API 页面上半部分展示信息
+     */
+    private ApiInfo apiInfo() {
+        return new ApiInfoBuilder().title(swaggerProperties.getApplicationName() + " Api Doc")
+                .description(swaggerProperties.getApplicationDescription())
+                .contact(new Contact("Joel", null, "joel.bradley.w@gmail.com"))
+                .version("Application Version: " + swaggerProperties.getApplicationVersion() + ", Spring Boot Version: " + SpringBootVersion.getVersion())
+                .build();
+    }
+
+    /**
+     * 设置授权信息
+     */
+    private List<SecurityScheme> securitySchemes() {
+        ApiKey apiKey = new ApiKey("Authorization", "token", In.HEADER.toValue());
+        return Collections.singletonList(apiKey);
+    }
+
+    /**
+     * 授权信息全局应用
+     */
+    private List<SecurityContext> securityContexts() {
+        return Collections.singletonList(
+                SecurityContext.builder()
+                        .securityReferences(Collections.singletonList(new SecurityReference("Authorization", new AuthorizationScope[]{new AuthorizationScope("global", "")})))
+                        .build()
+        );
+    }
+
+    @SafeVarargs
+    private final <T> Set<T> newHashSet(T... ts) {
+        if (ts.length > 0) {
+            return new LinkedHashSet<>(Arrays.asList(ts));
+        }
+        return null;
+    }
+
+    /**
+     * 通用拦截器排除swagger设置，所有拦截器都会自动加swagger相关的资源排除信息
+     */
+    @SuppressWarnings("unchecked")
     @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        String baseUrl = StringUtils.trimTrailingCharacter(this.baseUrl, '/');
-        registry.
-                addResourceHandler(baseUrl + "/swagger-ui/**")
-                .addResourceLocations("classpath:/META-INF/resources/webjars/springfox-swagger-ui/")
-                .resourceChain(false);
+    public void addInterceptors(InterceptorRegistry registry) {
+        try {
+            Field registrationsField = FieldUtils.getField(InterceptorRegistry.class, "registrations", true);
+            List<InterceptorRegistration> registrations = (List<InterceptorRegistration>) ReflectionUtils.getField(registrationsField, registry);
+            if (registrations != null) {
+                for (InterceptorRegistration interceptorRegistration : registrations) {
+                    interceptorRegistration
+                            .excludePathPatterns("/swagger**/**")
+                            .excludePathPatterns("/webjars/**")
+                            .excludePathPatterns("/v3/**")
+                            .excludePathPatterns("/doc.html");
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController(baseUrl + "/swagger-ui/")
-                .setViewName("forward:" + baseUrl + "/swagger-ui/index.html");
-    }
-
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-//        registry
-//                .addMapping("/api/pet")
-//                .allowedOrigins("http://editor.swagger.io");
-//        registry
-//                .addMapping("/v2/api-docs.*")
-//                .allowedOrigins("http://editor.swagger.io");
-    }
-
-    @GetMapping(value = "/docs")
+    @GetMapping(value = "/doc")
     @Operation(hidden = true)
     public ModelAndView home() {
         return new ModelAndView("redirect:/swagger-ui/index.html");

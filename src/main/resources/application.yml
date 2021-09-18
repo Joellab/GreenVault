@@ -39,6 +39,9 @@ spring:
             enable: true
         #表示开启 DEBUG 模式，这样，邮件发送过程的日志会在控制台打印出来，方便排查错误
         debug: false
+  application:
+    name: Clonfer
+    version: 0.0.1 SNAPSHOT
 
 # mybatis-plus
 mybatis-plus:
@@ -54,4 +57,11 @@ minio:
 security:
   jwt:
     secretKey: whatever
+
+swagger:
+  enable: true
+  application-name: ${spring.application.name}
+  application-version: ${spring.application.version}
+  application-description: Clonfer云展会API接口文档
+  try-host: http://localhost:${server.port}
 
