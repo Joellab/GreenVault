@@ -4,6 +4,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import jdk.internal.cmm.SystemResourcePressureImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -50,20 +51,19 @@ public class JwtManager {
      * @return 解析成功返回Claims对象，解析失败返回null
      */
     public Claims parse(String token) {
-        // 如果是空字符串直接返回null
         if (!StringUtils.hasLength(token)) {
             return null;
         }
-
+        token = token.replace("Bearer", "").trim();
         Claims claims = null;
-        // 解析失败了会抛出异常，所以我们要捕捉一下。token过期、token非法都会导致解析失败
         try {
             claims = Jwts.parser()
                     .setSigningKey(secretKey)
                     .parseClaimsJws(token)
                     .getBody();
+            System.out.println(claims);
         } catch (JwtException e) {
-            log.error("token解析失败:{}", e.toString());
+            log.error("Token解析失败 - {}", e.toString());
         }
         return claims;
     }
