@@ -74,7 +74,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title(swaggerProperties.getApplicationName() + " Api Doc")
                 .description(swaggerProperties.getApplicationDescription())
-                .contact(new Contact("Joel", null, "joel.bradley.w@gmail.com"))
+                .contact(new Contact("Author", null, "joel.bradley.w@gmail.com"))
                 .version("Application Version: " + swaggerProperties.getApplicationVersion() + ", Spring Boot Version: " + SpringBootVersion.getVersion())
                 .build();
     }
