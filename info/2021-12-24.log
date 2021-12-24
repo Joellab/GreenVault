@@ -1,0 +1,143 @@
+[2021-12-24 14:19:33.522] [org.hibernate.validator.internal.util.Version] [background-preinit] [21] [INFO ] HV000001: Hibernate Validator 6.1.6.Final
+[2021-12-24 14:19:33.526] [org.springframework.boot.StartupInfoLogger] [restartedMain] [55] [INFO ] Starting StartConferencePlus using Java 1.8.0_281 on MacBook-Pro.local with PID 8373 (/Users/Development/GreenVault/Backend/target/classes started by joel in /Users/Development/GreenVault/Backend)
+[2021-12-24 14:19:33.526] [org.springframework.boot.SpringApplication] [restartedMain] [660] [INFO ] No active profile set, falling back to default profiles: default
+[2021-12-24 14:19:33.563] [org.springframework.boot.logging.DeferredLog] [restartedMain] [255] [INFO ] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-12-24 14:19:33.563] [org.springframework.boot.logging.DeferredLog] [restartedMain] [255] [INFO ] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-12-24 14:19:34.462] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [restartedMain] [250] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2021-12-24 14:19:34.464] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [restartedMain] [128] [INFO ] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2021-12-24 14:19:34.494] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [restartedMain] [188] [INFO ] Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+[2021-12-24 14:19:34.900] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [restartedMain] [350] [INFO ] Bean 'redisConfig' of type [com.hongmai.clonfer.config.RedisConfig$$EnhancerBySpringCGLIB$$37544991] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2021-12-24 14:19:35.239] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [restartedMain] [108] [INFO ] Tomcat initialized with port(s): 8090 (http)
+[2021-12-24 14:19:35.246] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8090"]
+[2021-12-24 14:19:35.246] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting service [Tomcat]
+[2021-12-24 14:19:35.246] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.39]
+[2021-12-24 14:19:35.297] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2021-12-24 14:19:35.298] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [restartedMain] [289] [INFO ] Root WebApplicationContext: initialization completed in 1733 ms
+[2021-12-24 14:19:35.831] [com.baomidou.mybatisplus.core.metadata.TableInfoHelper] [restartedMain] [307] [WARN ] Can not find table primary key in Class: "com.hongmai.clonfer.model.domain.CpBaseRole".
+[2021-12-24 14:19:36.111] [org.springframework.security.access.intercept.AbstractSecurityInterceptor] [restartedMain] [153] [WARN ] Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+[2021-12-24 14:19:38.439] [org.springframework.security.web.DefaultSecurityFilterChain] [restartedMain] [51] [INFO ] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@115234ab, org.springframework.security.web.context.SecurityContextPersistenceFilter@61bbb7d, org.springframework.security.web.header.HeaderWriterFilter@6fd0e680, org.springframework.web.filter.CorsFilter@2b966ffd, org.springframework.security.web.authentication.logout.LogoutFilter@2b3a9c1c, com.hongmai.clonfer.security.LoginFilter@3940f12f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c445bc1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c249500, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a2051e5, org.springframework.security.web.session.SessionManagementFilter@53477407, org.springframework.security.web.access.ExceptionTranslationFilter@847d481, com.hongmai.clonfer.security.AuthFilter@339cc3c9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9fea3bf]
+[2021-12-24 14:19:38.500] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [restartedMain] [181] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2021-12-24 14:19:38.540] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [restartedMain] [58] [INFO ] LiveReload server is running on port 35729
+[2021-12-24 14:19:38.606] [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] [restartedMain] [105] [WARN ] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2021-12-24 14:19:38.901] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting ProtocolHandler ["http-nio-8090"]
+[2021-12-24 14:19:38.928] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [restartedMain] [220] [INFO ] Tomcat started on port(s): 8090 (http) with context path ''
+[2021-12-24 14:19:39.339] [org.springframework.boot.StartupInfoLogger] [restartedMain] [61] [INFO ] Started StartConferencePlus in 6.123 seconds (JVM running for 6.897)
+[2021-12-24 14:19:39.347] [com.zaxxer.hikari.HikariDataSource] [restartedMain] [110] [INFO ] HikariPool-1 - Starting...
+[2021-12-24 14:19:43.121] [com.zaxxer.hikari.HikariDataSource] [restartedMain] [123] [INFO ] HikariPool-1 - Start completed.
+[2021-12-24 14:19:43.537] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [restartedMain] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseResourcesMapper.delete
+[2021-12-24 14:19:43.537] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==>  Preparing: DELETE FROM cp_base_resource WHERE (type = ?)
+[2021-12-24 14:19:43.558] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==> Parameters: 1(Integer)
+[2021-12-24 14:19:44.241] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] <==    Updates: 9
+[2021-12-24 14:19:44.912] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [restartedMain] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseResourcesMapper.insertResources
+[2021-12-24 14:19:44.913] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==>  Preparing: insert into cp_base_resource(uuid, code, path, name, type, action, subject) values (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?)
+[2021-12-24 14:19:44.915] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==> Parameters: 4a95dd25-0cbf-4ef0-ab63-3779591ecc4f(String), 2001(Integer), POST:/API/role(String), 角色管理(String), 1(Integer), manage(String), all(String), 81aec7cd-728c-43ce-b4ed-b2362f51c691(String), 1004(Integer), GET:/api/v1/conference/page/{currentPage}(String), 会议管理(String), 1(Integer), manage(String), all(String), f6c19bf6-c4d7-4668-a4b2-393d87d765c7(String), 1003(Integer), PUT:/api/v1/conference(String), 会议管理(String), 1(Integer), manage(String), all(String), 2784a2c3-6442-4d25-bbb5-db421ac2839b(String), 1002(Integer), DELETE:/api/v1/conference(String), 会议管理(String), 1(Integer), manage(String), all(String), 92287ca3-2caf-46e6-82b9-0eed15f71d62(String), 101(Integer), GET:/api/v1/user/search(String), 用户管理(String), 1(Integer), manage(String), all(String), 96a77a16-7f25-4baa-91c5-04324a57ee4f(String), 2003(Integer), PUT:/API/role(String), 角色管理(String), 1(Integer), manage(String), all(String), 847c946f-dac5-4517-8fc6-ad99081afae8(String), 2002(Integer), DELETE:/API/role(String), 角色管理(String), 1(Integer), manage(String), all(String), 876aa09d-260c-4ccb-9074-9a7c8966a654(String), 1001(Integer), POST:/api/v1/conference(String), 会议管理(String), 1(Integer), manage(String), all(String), 848fc248-d127-49fe-97bb-8ced597519b5(String), 1005(Integer), GET:/api/v1/conference/detail/{conferenceId}(String), 会议管理(String), 1(Integer), manage(String), all(String)
+[2021-12-24 14:19:45.359] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] <==    Updates: 9
+[2021-12-24 14:20:51.609] [org.apache.juli.logging.DirectJDKLog] [http-nio-8090-exec-1] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-12-24 14:20:51.610] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8090-exec-1] [525] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2021-12-24 14:20:51.612] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8090-exec-1] [547] [INFO ] Completed initialization in 2 ms
+[2021-12-24 14:20:51.631] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:20:51.632] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:20:51.634] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:20:51.634] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:20:51.642] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:20:51.642] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:20:54.289] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:20:54.289] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:20:54.290] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:20:54.290] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:20:54.292] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:20:54.292] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:20:55.599] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:20:55.599] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:20:55.599] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:20:55.599] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:20:55.602] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:20:55.602] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.500] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.500] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.501] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.501] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.552] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-5] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.553] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-5] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.553] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-5] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.553] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-5] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.557] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-6] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.557] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-7] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.557] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-6] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.557] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-7] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.558] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-7] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.558] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-6] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.559] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-7] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.559] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-6] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.560] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-8] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.561] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-8] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.561] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-9] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.561] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-9] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.561] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-8] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.561] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-8] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.561] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-9] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.562] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-9] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.777] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.778] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.778] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.778] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.887] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.888] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.888] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.888] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.908] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.908] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.908] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.909] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.927] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.927] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.927] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.927] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.933] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.933] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.934] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.934] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.970] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-5] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.970] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-5] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:21:10.971] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-5] [41] [INFO ] ---AuthFilter---
+[2021-12-24 14:21:10.971] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-5] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-12-24 14:55:26.710] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [SpringContextShutdownHook] [218] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2021-12-24 14:55:26.716] [com.zaxxer.hikari.HikariDataSource] [SpringContextShutdownHook] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2021-12-24 14:55:26.721] [com.zaxxer.hikari.HikariDataSource] [SpringContextShutdownHook] [352] [INFO ] HikariPool-1 - Shutdown completed.
+[2021-12-24 14:58:14.556] [org.springframework.boot.StartupInfoLogger] [restartedMain] [55] [INFO ] Starting StartConferencePlus using Java 1.8.0_281 on MacBook-Pro.local with PID 8821 (/Users/Development/GreenVault/Backend/target/classes started by joel in /Users/Development/GreenVault/Backend)
+[2021-12-24 14:58:14.556] [org.hibernate.validator.internal.util.Version] [background-preinit] [21] [INFO ] HV000001: Hibernate Validator 6.1.6.Final
+[2021-12-24 14:58:14.558] [org.springframework.boot.SpringApplication] [restartedMain] [660] [INFO ] No active profile set, falling back to default profiles: default
+[2021-12-24 14:58:14.598] [org.springframework.boot.logging.DeferredLog] [restartedMain] [255] [INFO ] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-12-24 14:58:14.599] [org.springframework.boot.logging.DeferredLog] [restartedMain] [255] [INFO ] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-12-24 14:58:15.482] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [restartedMain] [250] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2021-12-24 14:58:15.484] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [restartedMain] [128] [INFO ] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2021-12-24 14:58:15.511] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [restartedMain] [188] [INFO ] Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+[2021-12-24 14:58:15.909] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [restartedMain] [350] [INFO ] Bean 'redisConfig' of type [com.hongmai.clonfer.config.RedisConfig$$EnhancerBySpringCGLIB$$17946432] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2021-12-24 14:58:16.211] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [restartedMain] [108] [INFO ] Tomcat initialized with port(s): 8090 (http)
+[2021-12-24 14:58:16.218] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8090"]
+[2021-12-24 14:58:16.219] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting service [Tomcat]
+[2021-12-24 14:58:16.219] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.39]
+[2021-12-24 14:58:16.271] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2021-12-24 14:58:16.272] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [restartedMain] [289] [INFO ] Root WebApplicationContext: initialization completed in 1673 ms
+[2021-12-24 14:58:16.778] [com.baomidou.mybatisplus.core.metadata.TableInfoHelper] [restartedMain] [307] [WARN ] Can not find table primary key in Class: "com.hongmai.clonfer.model.domain.CpBaseRole".
+[2021-12-24 14:58:17.089] [org.springframework.security.access.intercept.AbstractSecurityInterceptor] [restartedMain] [153] [WARN ] Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+[2021-12-24 14:58:18.945] [org.springframework.security.web.DefaultSecurityFilterChain] [restartedMain] [51] [INFO ] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@185c0d60, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ca766b, org.springframework.security.web.header.HeaderWriterFilter@4c31d321, org.springframework.web.filter.CorsFilter@18cdda2a, org.springframework.security.web.authentication.logout.LogoutFilter@796a6cfb, com.hongmai.clonfer.security.LoginFilter@51ef793d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ac0a66b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d4f841b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fa3191f, org.springframework.security.web.session.SessionManagementFilter@731f196a, org.springframework.security.web.access.ExceptionTranslationFilter@5d30246c, com.hongmai.clonfer.security.AuthFilter@6f3d3467, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55554808]
+[2021-12-24 14:58:19.002] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [restartedMain] [181] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2021-12-24 14:58:19.040] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [restartedMain] [58] [INFO ] LiveReload server is running on port 35729
+[2021-12-24 14:58:19.108] [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] [restartedMain] [105] [WARN ] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2021-12-24 14:58:19.394] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting ProtocolHandler ["http-nio-8090"]
+[2021-12-24 14:58:19.426] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [restartedMain] [220] [INFO ] Tomcat started on port(s): 8090 (http) with context path ''
+[2021-12-24 14:58:19.837] [org.springframework.boot.StartupInfoLogger] [restartedMain] [61] [INFO ] Started StartConferencePlus in 5.595 seconds (JVM running for 6.325)
+[2021-12-24 14:58:19.845] [com.zaxxer.hikari.HikariDataSource] [restartedMain] [110] [INFO ] HikariPool-1 - Starting...
+[2021-12-24 14:58:22.650] [com.zaxxer.hikari.HikariDataSource] [restartedMain] [123] [INFO ] HikariPool-1 - Start completed.
+[2021-12-24 14:58:22.933] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [restartedMain] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseResourcesMapper.delete
+[2021-12-24 14:58:22.934] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==>  Preparing: DELETE FROM cp_base_resource WHERE (type = ?)
+[2021-12-24 14:58:22.955] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==> Parameters: 1(Integer)
+[2021-12-24 14:58:23.390] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] <==    Updates: 9
+[2021-12-24 14:58:24.050] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [restartedMain] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseResourcesMapper.insertResources
+[2021-12-24 14:58:24.050] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==>  Preparing: insert into cp_base_resource(uuid, code, path, name, type, action, subject) values (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?)
+[2021-12-24 14:58:24.053] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==> Parameters: 1d604dec-48e3-4fa9-a59f-e732b2d5a706(String), 1001(Integer), POST:/api/v1/conference(String), 会议管理(String), 1(Integer), manage(String), all(String), 48850dfb-0bab-4fb1-b88f-19c00458733c(String), 1002(Integer), DELETE:/api/v1/conference(String), 会议管理(String), 1(Integer), manage(String), all(String), e3d59ee2-8d38-4874-b278-410b93f1baa1(String), 101(Integer), GET:/api/v1/user/search(String), 用户管理(String), 1(Integer), manage(String), all(String), e4a61196-8136-4924-97fa-6d5dfe5aeb21(String), 1005(Integer), GET:/api/v1/conference/detail/{conferenceId}(String), 会议管理(String), 1(Integer), manage(String), all(String), 5cbebdd9-d354-4e73-8f7c-ee0aa4acdefe(String), 2002(Integer), DELETE:/API/role(String), 角色管理(String), 1(Integer), manage(String), all(String), d8fd75f3-6571-4fdb-8728-d5ac1052174f(String), 2003(Integer), PUT:/API/role(String), 角色管理(String), 1(Integer), manage(String), all(String), b0fc0e85-6212-4b0a-86a0-eea10feae48e(String), 1003(Integer), PUT:/api/v1/conference(String), 会议管理(String), 1(Integer), manage(String), all(String), e83e5b82-f729-4cd0-aeda-bfd69278270e(String), 2001(Integer), POST:/API/role(String), 角色管理(String), 1(Integer), manage(String), all(String), 1b50bf92-8b01-496d-90d1-e24b38936d83(String), 1004(Integer), GET:/api/v1/conference/page/{currentPage}(String), 会议管理(String), 1(Integer), manage(String), all(String)
+[2021-12-24 14:58:24.491] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] <==    Updates: 9
+[2021-12-24 14:58:36.000] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [SpringContextShutdownHook] [218] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2021-12-24 14:58:36.004] [com.zaxxer.hikari.HikariDataSource] [SpringContextShutdownHook] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2021-12-24 14:58:36.202] [com.zaxxer.hikari.HikariDataSource] [SpringContextShutdownHook] [352] [INFO ] HikariPool-1 - Shutdown completed.

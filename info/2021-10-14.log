@@ -1,0 +1,642 @@
+[2021-10-14 14:07:41.653] [org.hibernate.validator.internal.util.Version] [background-preinit] [21] [INFO ] HV000001: Hibernate Validator 6.1.6.Final
+[2021-10-14 14:07:41.666] [org.springframework.boot.StartupInfoLogger] [restartedMain] [55] [INFO ] Starting StartConferencePlus using Java 1.8.0_281 on MacBook-Pro.local with PID 94555 (/Users/Development/ConferenceManagementSystem/Backend/target/classes started by joel in /Users/Development/ConferenceManagementSystem/Backend)
+[2021-10-14 14:07:41.667] [org.springframework.boot.SpringApplication] [restartedMain] [660] [INFO ] No active profile set, falling back to default profiles: default
+[2021-10-14 14:07:41.714] [org.springframework.boot.logging.DeferredLog] [restartedMain] [255] [INFO ] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-14 14:07:41.714] [org.springframework.boot.logging.DeferredLog] [restartedMain] [255] [INFO ] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-14 14:07:42.934] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [restartedMain] [250] [INFO ] Multiple Spring Data modules found, entering strict repository configuration mode!
+[2021-10-14 14:07:42.937] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [restartedMain] [128] [INFO ] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2021-10-14 14:07:42.977] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [restartedMain] [188] [INFO ] Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+[2021-10-14 14:07:43.563] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [restartedMain] [350] [INFO ] Bean 'redisConfig' of type [com.hongmai.clonfer.config.RedisConfig$$EnhancerBySpringCGLIB$$14cdf09b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2021-10-14 14:07:44.000] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [restartedMain] [108] [INFO ] Tomcat initialized with port(s): 8090 (http)
+[2021-10-14 14:07:44.010] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-14 14:07:44.011] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting service [Tomcat]
+[2021-10-14 14:07:44.011] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.39]
+[2021-10-14 14:07:44.082] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2021-10-14 14:07:44.082] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [restartedMain] [289] [INFO ] Root WebApplicationContext: initialization completed in 2367 ms
+[2021-10-14 14:07:44.838] [com.baomidou.mybatisplus.core.metadata.TableInfoHelper] [restartedMain] [307] [WARN ] Can not find table primary key in Class: "com.hongmai.clonfer.model.domain.CpBaseRole".
+[2021-10-14 14:07:45.147] [org.springframework.security.access.intercept.AbstractSecurityInterceptor] [restartedMain] [153] [WARN ] Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+[2021-10-14 14:07:47.335] [org.springframework.security.web.DefaultSecurityFilterChain] [restartedMain] [51] [INFO ] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c1dc7a7, org.springframework.security.web.context.SecurityContextPersistenceFilter@630dd3b, org.springframework.security.web.header.HeaderWriterFilter@68433559, org.springframework.web.filter.CorsFilter@3eba7822, org.springframework.security.web.authentication.logout.LogoutFilter@5fb78929, com.hongmai.clonfer.security.LoginFilter@35ebd9ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@328af5cf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@456b99e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@405a891a, org.springframework.security.web.session.SessionManagementFilter@682ff420, org.springframework.security.web.access.ExceptionTranslationFilter@3f5dd5c, com.hongmai.clonfer.security.AuthFilter@69a47e17, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6caeea61]
+[2021-10-14 14:07:47.403] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [restartedMain] [181] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2021-10-14 14:07:47.450] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [restartedMain] [58] [INFO ] LiveReload server is running on port 35729
+[2021-10-14 14:07:47.528] [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] [restartedMain] [105] [WARN ] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2021-10-14 14:07:47.906] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-14 14:07:47.934] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [restartedMain] [220] [INFO ] Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-14 14:07:48.431] [org.springframework.boot.StartupInfoLogger] [restartedMain] [61] [INFO ] Started StartConferencePlus in 7.24 seconds (JVM running for 8.861)
+[2021-10-14 14:07:48.439] [com.zaxxer.hikari.HikariDataSource] [restartedMain] [110] [INFO ] HikariPool-1 - Starting...
+[2021-10-14 14:07:51.328] [com.zaxxer.hikari.HikariDataSource] [restartedMain] [123] [INFO ] HikariPool-1 - Start completed.
+[2021-10-14 14:07:51.611] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [restartedMain] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseResourcesMapper.delete
+[2021-10-14 14:07:51.612] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==>  Preparing: DELETE FROM cp_base_resource WHERE (type = ?)
+[2021-10-14 14:07:51.635] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==> Parameters: 1(Integer)
+[2021-10-14 14:07:52.060] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] <==    Updates: 9
+[2021-10-14 14:07:52.704] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [restartedMain] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseResourcesMapper.insertResources
+[2021-10-14 14:07:52.704] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==>  Preparing: insert into cp_base_resource(uuid, code, path, name, type, action, subject) values (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?)
+[2021-10-14 14:07:52.707] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] ==> Parameters: e8b9f83f-18e6-495d-928a-ffc4296c9936(String), 2002(Integer), DELETE:/API/role(String), 角色管理(String), 1(Integer), manage(String), all(String), 1e81de1b-c752-49b2-bb58-5f135e8b18d9(String), 1002(Integer), DELETE:/api/v1/conference(String), 会议管理(String), 1(Integer), manage(String), all(String), 2b57b4da-c80f-47c7-82d0-e678a6aa0326(String), 2001(Integer), POST:/API/role(String), 角色管理(String), 1(Integer), manage(String), all(String), c7625335-65b4-46fb-839f-f4f5e37cf5bb(String), 1005(Integer), GET:/api/v1/conference/detail/{conferenceId}(String), 会议管理(String), 1(Integer), manage(String), all(String), 59e59ada-42f8-4d3e-a136-ad55ac7bcb47(String), 1004(Integer), GET:/api/v1/conference/page/{currentPage}(String), 会议管理(String), 1(Integer), manage(String), all(String), ea23c563-db51-48c3-bfa4-0cecf998ac6b(String), 1003(Integer), PUT:/api/v1/conference(String), 会议管理(String), 1(Integer), manage(String), all(String), 54c54c61-340a-44c4-bee6-7feb35d03864(String), 2003(Integer), PUT:/API/role(String), 角色管理(String), 1(Integer), manage(String), all(String), 7c7716c9-63e0-491a-8a19-245671666896(String), 101(Integer), GET:/api/v1/user/search(String), 用户管理(String), 1(Integer), manage(String), all(String), 46881bed-442a-4118-8146-f7773bca0d1b(String), 1001(Integer), POST:/api/v1/conference(String), 会议管理(String), 1(Integer), manage(String), all(String)
+[2021-10-14 14:07:53.155] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [restartedMain] [137] [DEBUG] <==    Updates: 9
+[2021-10-14 14:08:58.105] [org.apache.juli.logging.DirectJDKLog] [http-nio-8090-exec-2] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-14 14:08:58.105] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8090-exec-2] [525] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2021-10-14 14:08:58.107] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8090-exec-2] [547] [INFO ] Completed initialization in 2 ms
+[2021-10-14 14:08:58.147] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:08:58.147] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:08:58.148] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-2] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[ROLE_ANONYMOUS]
+[2021-10-14 14:09:09.980] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:09.981] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:09.982] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:09.982] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.092] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.092] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.093] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.093] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.095] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-6] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.095] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-7] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.095] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-5] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.095] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-6] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.095] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-7] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.095] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-8] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.095] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-5] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.096] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-6] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.096] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-8] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.096] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-7] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.096] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-5] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.096] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-6] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.096] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-7] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.096] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-8] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.096] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-5] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.097] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-8] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.372] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-9] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.378] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-9] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.379] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-9] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.379] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-9] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.508] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.508] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.509] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.509] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.622] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.622] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.623] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.623] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.870] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.870] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:10.871] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:10.871] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:11.024] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:11.024] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:09:11.024] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:09:11.025] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:12:28.869] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:12:28.872] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:12:28.889] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:12:28.890] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:13:29.639] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:13:29.640] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:13:29.641] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:13:29.641] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:13:30.199] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-1] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:13:30.200] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:13:30.203] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] ==> Parameters: xxxx(String)
+[2021-10-14 14:13:30.545] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] <==      Total: 0
+[2021-10-14 14:13:30.550] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-1] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:13:30.551] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (email = ?)
+[2021-10-14 14:13:30.551] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] ==> Parameters: joel.bradley.w@gmail.com(String)
+[2021-10-14 14:13:30.887] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:13:31.434] [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver] [http-nio-8090-exec-1] [207] [WARN ] Resolved [com.hongmai.clonfer.exception.ApiException: 用户名已存在]
+[2021-10-14 14:13:39.405] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:13:39.406] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:13:39.407] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:13:39.407] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:13:39.843] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-2] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:13:39.843] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-2] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:13:39.845] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-2] [137] [DEBUG] ==> Parameters: SSSxxxx(String)
+[2021-10-14 14:13:40.059] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-2] [137] [DEBUG] <==      Total: 0
+[2021-10-14 14:13:40.064] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-2] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:13:40.065] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-2] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (email = ?)
+[2021-10-14 14:13:40.066] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-2] [137] [DEBUG] ==> Parameters: joel.bradley.w@gmail.com(String)
+[2021-10-14 14:13:40.280] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-2] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:13:40.712] [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver] [http-nio-8090-exec-2] [207] [WARN ] Resolved [com.hongmai.clonfer.exception.ApiException: 用户名已存在]
+[2021-10-14 14:13:58.549] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:13:58.550] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:13:58.550] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:13:58.550] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:13:58.979] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-3] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:13:58.981] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:13:58.981] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] ==> Parameters: 测试(String)
+[2021-10-14 14:13:59.195] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] <==      Total: 0
+[2021-10-14 14:13:59.197] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-3] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:13:59.197] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (email = ?)
+[2021-10-14 14:13:59.198] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] ==> Parameters: joel.bradley.w@gmail.com(String)
+[2021-10-14 14:13:59.414] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:13:59.841] [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver] [http-nio-8090-exec-3] [207] [WARN ] Resolved [com.hongmai.clonfer.exception.ApiException: 用户名已存在]
+[2021-10-14 14:14:07.415] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:14:07.415] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:14:07.417] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:14:07.417] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:14:07.854] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:14:07.855] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:14:07.855] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 测试(String)
+[2021-10-14 14:14:08.068] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 0
+[2021-10-14 14:14:08.071] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:14:08.072] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (email = ?)
+[2021-10-14 14:14:08.072] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: joel.bradley.w@gmail.com(String)
+[2021-10-14 14:14:08.285] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:14:08.710] [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver] [http-nio-8090-exec-4] [207] [WARN ] Resolved [com.hongmai.clonfer.exception.ApiException: 用户名已存在]
+[2021-10-14 14:16:17.113] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-5] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:16:17.113] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-5] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:16:17.114] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-5] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:16:17.114] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-5] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:16:17.548] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-5] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:16:17.549] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:16:17.550] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] ==> Parameters: joel.bradley.w@gmail.com(String)
+[2021-10-14 14:16:17.762] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] <==      Total: 0
+[2021-10-14 14:16:17.765] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-5] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:16:17.766] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (email = ?)
+[2021-10-14 14:16:17.767] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] ==> Parameters: joel.bradley.w@gmail.com(String)
+[2021-10-14 14:16:17.980] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:16:18.502] [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver] [http-nio-8090-exec-5] [207] [WARN ] Resolved [com.hongmai.clonfer.exception.ApiException: 用户名或密码错误]
+[2021-10-14 14:16:23.675] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-8] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:16:23.675] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-8] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:16:23.676] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-8] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:16:23.676] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-8] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:16:24.102] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-8] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:16:24.102] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:16:24.103] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==> Parameters: joel.bradley.w@gmail.com(String)
+[2021-10-14 14:16:24.316] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] <==      Total: 0
+[2021-10-14 14:16:24.318] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-8] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:16:24.319] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (email = ?)
+[2021-10-14 14:16:24.320] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==> Parameters: joel.bradley.w@gmail.com(String)
+[2021-10-14 14:16:24.532] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:16:24.880] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-8] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:16:24.881] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:16:24.882] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:16:25.098] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:16:25.258] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-8] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.updateById
+[2021-10-14 14:16:25.258] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==>  Preparing: UPDATE cp_base_user SET username=?, password=?, fullname=?, avatar=?, email=?, role=?, orginazation_uuid=?, ability=?, gmt_reg=?, ip_reg=?, gmt_last_login=?, ip_last_login=?, status=? WHERE uuid=?
+[2021-10-14 14:16:25.260] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==> Parameters: Joel(String), $2a$10$CKH8Z7dkOWMzAOuUMLsRAOCBJiXHbeF.vZ/F9EijpNitduylRDVWK(String), 王嘉维(String), https://conf.dev.web.joellab.com/image/avatar_default.png(String), joel.bradley.w@gmail.com(String), 2(Integer), 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String), [{"action":"manage","subject":"all"}](String), 2021-09-15 01:38:17(String), 127.0.0.1(String), 2021-10-14 14:16:25(String), 0:0:0:0:0:0:0:1(String), NORMAL(String), 986b46fc-800b-4ba3-aa14-9757dd2db2e5(String)
+[2021-10-14 14:16:25.687] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] <==    Updates: 1
+[2021-10-14 14:16:39.146] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-7] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:16:39.147] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-7] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:16:39.147] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-7] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[ROLE_ANONYMOUS]
+[2021-10-14 14:16:52.290] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-9] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:16:52.291] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:16:52.291] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:16:52.505] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:16:52.508] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-9] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:16:52.508] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:16:52.509] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:16:52.721] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:16:53.149] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-9] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:16:53.149] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-9] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:16:53.150] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-9] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[0]
+[2021-10-14 14:16:53.371] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-9] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:16:53.371] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-9] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:16:53.372] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-9] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[0]
+[2021-10-14 14:16:53.609] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [49] [INFO ] ========================================== Start ==========================================
+[2021-10-14 14:16:53.610] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [51] [INFO ] URL            : http://localhost:8090/api/v1/conference
+[2021-10-14 14:16:53.610] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [53] [INFO ] Description    : 删除会议接口
+[2021-10-14 14:16:53.610] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [55] [INFO ] HTTP Method    : DELETE
+[2021-10-14 14:16:53.611] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [57] [INFO ] Class Method   : com.hongmai.clonfer.controller.api.v1.ConferenceController.deleteConference
+[2021-10-14 14:16:53.611] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [59] [INFO ] IP             : 0:0:0:0:0:0:0:1
+[2021-10-14 14:16:53.616] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [61] [INFO ] Request Args   : [null]
+[2021-10-14 14:16:53.622] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [71] [INFO ] =========================================== End ===========================================
+
+[2021-10-14 14:16:53.624] [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver] [http-nio-8090-exec-9] [207] [WARN ] Resolved [com.hongmai.clonfer.exception.ApiException: 参数校验失败]
+[2021-10-14 14:17:09.620] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-10] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:17:09.621] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:17:09.622] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:17:09.839] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:17:09.843] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-10] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:17:09.844] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:17:09.845] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:17:10.057] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:17:10.486] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:17:10.486] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:17:10.487] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-10] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[0]
+[2021-10-14 14:17:10.707] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:17:10.708] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:17:10.708] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-10] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[0]
+[2021-10-14 14:17:10.929] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [49] [INFO ] ========================================== Start ==========================================
+[2021-10-14 14:17:10.929] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [51] [INFO ] URL            : http://localhost:8090/api/v1/conference
+[2021-10-14 14:17:10.930] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [53] [INFO ] Description    : 删除会议接口
+[2021-10-14 14:17:10.930] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [55] [INFO ] HTTP Method    : DELETE
+[2021-10-14 14:17:10.930] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [57] [INFO ] Class Method   : com.hongmai.clonfer.controller.api.v1.ConferenceController.deleteConference
+[2021-10-14 14:17:10.930] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [59] [INFO ] IP             : 0:0:0:0:0:0:0:1
+[2021-10-14 14:17:10.931] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [61] [INFO ] Request Args   : [null]
+[2021-10-14 14:17:10.931] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [71] [INFO ] =========================================== End ===========================================
+
+[2021-10-14 14:17:10.932] [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver] [http-nio-8090-exec-10] [207] [WARN ] Resolved [com.hongmai.clonfer.exception.ApiException: 参数校验失败]
+[2021-10-14 14:17:27.241] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:17:27.241] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:17:27.241] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-2] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[ROLE_ANONYMOUS]
+[2021-10-14 14:17:31.927] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:17:31.927] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:17:31.927] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-3] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[ROLE_ANONYMOUS]
+[2021-10-14 14:17:40.580] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:17:40.580] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:17:40.581] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:17:40.795] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:17:40.798] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:17:40.799] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:17:40.799] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:17:41.012] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:17:41.440] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:17:41.440] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:17:41.440] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-4] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[0]
+[2021-10-14 14:17:41.661] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:17:41.662] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:17:41.663] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-4] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[0]
+[2021-10-14 14:17:41.940] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [49] [INFO ] ========================================== Start ==========================================
+[2021-10-14 14:17:41.940] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [51] [INFO ] URL            : http://localhost:8090/api/v1/conference
+[2021-10-14 14:17:41.941] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [53] [INFO ] Description    : 删除会议接口
+[2021-10-14 14:17:41.941] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [55] [INFO ] HTTP Method    : DELETE
+[2021-10-14 14:17:41.941] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [57] [INFO ] Class Method   : com.hongmai.clonfer.controller.api.v1.ConferenceController.deleteConference
+[2021-10-14 14:17:41.941] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [59] [INFO ] IP             : 0:0:0:0:0:0:0:1
+[2021-10-14 14:17:41.942] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [61] [INFO ] Request Args   : [["1"]]
+[2021-10-14 14:17:42.173] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.deleteBatchIds
+[2021-10-14 14:17:42.175] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: DELETE FROM cp_conference_record WHERE uuid IN ( ? )
+[2021-10-14 14:17:42.176] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 1(String)
+[2021-10-14 14:17:42.601] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==    Updates: 0
+[2021-10-14 14:17:42.602] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [71] [INFO ] =========================================== End ===========================================
+
+[2021-10-14 14:17:42.602] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [85] [INFO ] Response Args  : "操作成功"
+[2021-10-14 14:17:42.602] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [87] [INFO ] Time-Consuming : 662 ms
+[2021-10-14 14:18:12.777] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-5] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:18:12.778] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:18:12.779] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:18:12.997] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:18:12.999] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-5] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:18:12.999] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:18:13.000] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:18:13.212] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:18:13.636] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-5] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:18:13.636] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-5] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:18:13.636] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-5] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[0]
+[2021-10-14 14:18:13.857] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-5] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:18:13.857] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-5] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:18:13.858] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-5] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[0]
+[2021-10-14 14:18:14.079] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-5] [49] [INFO ] ========================================== Start ==========================================
+[2021-10-14 14:18:14.080] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-5] [51] [INFO ] URL            : http://localhost:8090/api/v1/conference
+[2021-10-14 14:18:14.080] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-5] [53] [INFO ] Description    : 删除会议接口
+[2021-10-14 14:18:14.081] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-5] [55] [INFO ] HTTP Method    : DELETE
+[2021-10-14 14:18:14.081] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-5] [57] [INFO ] Class Method   : com.hongmai.clonfer.controller.api.v1.ConferenceController.deleteConference
+[2021-10-14 14:18:14.082] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-5] [59] [INFO ] IP             : 0:0:0:0:0:0:0:1
+[2021-10-14 14:18:14.083] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-5] [61] [INFO ] Request Args   : [["1"]]
+[2021-10-14 14:18:14.084] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-5] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.deleteBatchIds
+[2021-10-14 14:18:14.085] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] ==>  Preparing: DELETE FROM cp_conference_record WHERE uuid IN ( ? )
+[2021-10-14 14:18:14.085] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] ==> Parameters: 1(String)
+[2021-10-14 14:18:14.510] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-5] [137] [DEBUG] <==    Updates: 0
+[2021-10-14 14:18:14.511] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-5] [71] [INFO ] =========================================== End ===========================================
+
+[2021-10-14 14:18:14.511] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-5] [85] [INFO ] Response Args  : "操作成功"
+[2021-10-14 14:18:14.511] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-5] [87] [INFO ] Time-Consuming : 432 ms
+[2021-10-14 14:18:27.837] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-8] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:18:27.838] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:18:27.838] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:18:28.052] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:18:28.054] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-8] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:18:28.054] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:18:28.055] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:18:28.267] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-8] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:18:28.692] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-8] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:18:28.692] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-8] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:18:28.693] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-8] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:18:28.693] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-8] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:18:28.697] [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver] [http-nio-8090-exec-8] [207] [WARN ] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[2021-10-14 14:18:28.703] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-8] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:18:28.704] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-8] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:18:55.392] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-7] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:18:55.392] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:18:55.393] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:18:55.607] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:18:55.610] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-7] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:18:55.611] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:18:55.611] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:18:55.824] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:18:56.248] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-7] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:18:56.249] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-7] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:18:56.249] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-7] [35] [INFO ] 权限鉴别 -> 所需权限[1004]｜用户权限[0]
+[2021-10-14 14:18:56.470] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-7] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:18:56.470] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-7] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:18:56.472] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-7] [35] [INFO ] 权限鉴别 -> 所需权限[1004]｜用户权限[0]
+[2021-10-14 14:18:56.696] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-7] [49] [INFO ] ========================================== Start ==========================================
+[2021-10-14 14:18:56.696] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-7] [51] [INFO ] URL            : http://localhost:8090/api/v1/conference/page/1
+[2021-10-14 14:18:56.697] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-7] [53] [INFO ] Description    : 查询会议列表接口
+[2021-10-14 14:18:56.697] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-7] [55] [INFO ] HTTP Method    : GET
+[2021-10-14 14:18:56.698] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-7] [57] [INFO ] Class Method   : com.hongmai.clonfer.controller.api.v1.ConferenceController.getConferencePage
+[2021-10-14 14:18:56.698] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-7] [59] [INFO ] IP             : 0:0:0:0:0:0:0:1
+[2021-10-14 14:18:56.698] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-7] [61] [INFO ] Request Args   : [1]
+[2021-10-14 14:18:56.707] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-7] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:18:56.708] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:18:56.708] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:18:56.923] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:18:56.971] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-7] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.selectPage_mpCount
+[2021-10-14 14:18:56.971] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==>  Preparing: SELECT COUNT(1) FROM cp_conference_record WHERE (organization = ?)
+[2021-10-14 14:18:56.972] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String)
+[2021-10-14 14:18:57.186] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:18:57.200] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-7] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.selectPage
+[2021-10-14 14:18:57.201] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==>  Preparing: SELECT uuid, title, sub_title, organization, guarantor, location, start_time, end_time, status, version, creator, operator, gmt_create, gmt_modified, ext_setting FROM cp_conference_record WHERE (organization = ?) ORDER BY gmt_create DESC LIMIT ?
+[2021-10-14 14:18:57.201] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String), 10(Long)
+[2021-10-14 14:18:57.417] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] <==      Total: 2
+[2021-10-14 14:18:57.487] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-7] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseOrginazationMapper.selectOne
+[2021-10-14 14:18:57.487] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,category,owner,member,gmt_create,plan,status,ext_info FROM cp_base_orginazation WHERE (uuid = ?)
+[2021-10-14 14:18:57.488] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String)
+[2021-10-14 14:18:57.700] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:18:57.702] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-7] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseOrginazationMapper.selectOne
+[2021-10-14 14:18:57.702] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,category,owner,member,gmt_create,plan,status,ext_info FROM cp_base_orginazation WHERE (uuid = ?)
+[2021-10-14 14:18:57.703] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String)
+[2021-10-14 14:18:57.915] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:18:57.916] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-7] [71] [INFO ] =========================================== End ===========================================
+
+[2021-10-14 14:18:57.922] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-7] [85] [INFO ] Response Args  : {"records":[{"uuid":"959b6225-e29a-4d11-8797-2a7c76258b37","title":"测试会议","subTitle":"测试会议副标题","organization":"测试企业","gmtCreate":"Wed Sep 15 19:29:19 BST 2021","status":"INIT"},{"uuid":"187545ba-0f78-4c7e-bd00-017e095976f7","title":"测试展会","subTitle":"测试展会副标题","organization":"测试企业","gmtCreate":"Tue Sep 14 18:41:05 BST 2021","status":"INIT"}],"total":2,"size":10,"current":1,"orders":[{"column":"gmt_create","asc":false}],"optimizeCountSql":true,"isSearchCount":true,"hitCount":false}
+[2021-10-14 14:18:57.923] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-7] [87] [INFO ] Time-Consuming : 1228 ms
+[2021-10-14 14:19:53.286] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-9] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:19:53.286] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:19:53.287] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:19:53.505] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:19:53.510] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-9] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:19:53.510] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:19:53.511] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:19:53.723] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:19:54.147] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-9] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:19:54.147] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-9] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:19:54.147] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-9] [35] [INFO ] 权限鉴别 -> 所需权限[1004]｜用户权限[0]
+[2021-10-14 14:19:54.368] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-9] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:19:54.369] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-9] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:19:54.369] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-9] [35] [INFO ] 权限鉴别 -> 所需权限[1004]｜用户权限[0]
+[2021-10-14 14:19:54.591] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [49] [INFO ] ========================================== Start ==========================================
+[2021-10-14 14:19:54.591] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [51] [INFO ] URL            : http://localhost:8090/api/v1/conference/page/2
+[2021-10-14 14:19:54.592] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [53] [INFO ] Description    : 查询会议列表接口
+[2021-10-14 14:19:54.592] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [55] [INFO ] HTTP Method    : GET
+[2021-10-14 14:19:54.592] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [57] [INFO ] Class Method   : com.hongmai.clonfer.controller.api.v1.ConferenceController.getConferencePage
+[2021-10-14 14:19:54.592] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [59] [INFO ] IP             : 0:0:0:0:0:0:0:1
+[2021-10-14 14:19:54.593] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [61] [INFO ] Request Args   : [2]
+[2021-10-14 14:19:54.595] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-9] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:19:54.596] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:19:54.596] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:19:54.809] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:19:54.814] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-9] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.selectPage_mpCount
+[2021-10-14 14:19:54.814] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==>  Preparing: SELECT COUNT(1) FROM cp_conference_record WHERE (organization = ?)
+[2021-10-14 14:19:54.815] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String)
+[2021-10-14 14:19:55.029] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:19:55.030] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [71] [INFO ] =========================================== End ===========================================
+
+[2021-10-14 14:19:55.034] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [85] [INFO ] Response Args  : {"records":[],"total":2,"size":10,"current":2,"orders":[{"column":"gmt_create","asc":false}],"optimizeCountSql":true,"isSearchCount":true,"hitCount":false}
+[2021-10-14 14:19:55.034] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-9] [87] [INFO ] Time-Consuming : 443 ms
+[2021-10-14 14:19:58.940] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-10] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:19:58.940] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:19:58.940] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:19:59.158] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:19:59.162] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-10] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:19:59.162] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:19:59.162] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:19:59.375] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:19:59.800] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:19:59.800] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:19:59.801] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-10] [35] [INFO ] 权限鉴别 -> 所需权限[1004]｜用户权限[0]
+[2021-10-14 14:20:00.022] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:20:00.023] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:20:00.024] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-10] [35] [INFO ] 权限鉴别 -> 所需权限[1004]｜用户权限[0]
+[2021-10-14 14:20:00.247] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [49] [INFO ] ========================================== Start ==========================================
+[2021-10-14 14:20:00.247] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [51] [INFO ] URL            : http://localhost:8090/api/v1/conference/page/1
+[2021-10-14 14:20:00.247] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [53] [INFO ] Description    : 查询会议列表接口
+[2021-10-14 14:20:00.247] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [55] [INFO ] HTTP Method    : GET
+[2021-10-14 14:20:00.248] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [57] [INFO ] Class Method   : com.hongmai.clonfer.controller.api.v1.ConferenceController.getConferencePage
+[2021-10-14 14:20:00.248] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [59] [INFO ] IP             : 0:0:0:0:0:0:0:1
+[2021-10-14 14:20:00.248] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [61] [INFO ] Request Args   : [1]
+[2021-10-14 14:20:00.250] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-10] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:20:00.251] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:20:00.251] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:20:00.466] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:20:00.471] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-10] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.selectPage_mpCount
+[2021-10-14 14:20:00.472] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==>  Preparing: SELECT COUNT(1) FROM cp_conference_record WHERE (organization = ?)
+[2021-10-14 14:20:00.472] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String)
+[2021-10-14 14:20:00.684] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:20:00.687] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-10] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.selectPage
+[2021-10-14 14:20:00.687] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==>  Preparing: SELECT uuid, title, sub_title, organization, guarantor, location, start_time, end_time, status, version, creator, operator, gmt_create, gmt_modified, ext_setting FROM cp_conference_record WHERE (organization = ?) ORDER BY gmt_create DESC LIMIT ?
+[2021-10-14 14:20:00.688] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String), 10(Long)
+[2021-10-14 14:20:00.902] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] <==      Total: 2
+[2021-10-14 14:20:00.909] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-10] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseOrginazationMapper.selectOne
+[2021-10-14 14:20:00.909] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,category,owner,member,gmt_create,plan,status,ext_info FROM cp_base_orginazation WHERE (uuid = ?)
+[2021-10-14 14:20:00.910] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String)
+[2021-10-14 14:20:01.122] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:20:01.126] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-10] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseOrginazationMapper.selectOne
+[2021-10-14 14:20:01.126] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,category,owner,member,gmt_create,plan,status,ext_info FROM cp_base_orginazation WHERE (uuid = ?)
+[2021-10-14 14:20:01.127] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String)
+[2021-10-14 14:20:01.339] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:20:01.340] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [71] [INFO ] =========================================== End ===========================================
+
+[2021-10-14 14:20:01.341] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [85] [INFO ] Response Args  : {"records":[{"uuid":"959b6225-e29a-4d11-8797-2a7c76258b37","title":"测试会议","subTitle":"测试会议副标题","organization":"测试企业","gmtCreate":"Wed Sep 15 19:29:19 BST 2021","status":"INIT"},{"uuid":"187545ba-0f78-4c7e-bd00-017e095976f7","title":"测试展会","subTitle":"测试展会副标题","organization":"测试企业","gmtCreate":"Tue Sep 14 18:41:05 BST 2021","status":"INIT"}],"total":2,"size":10,"current":1,"orders":[{"column":"gmt_create","asc":false}],"optimizeCountSql":true,"isSearchCount":true,"hitCount":false}
+[2021-10-14 14:20:01.342] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-10] [87] [INFO ] Time-Consuming : 1096 ms
+[2021-10-14 14:24:13.576] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-3] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:24:13.579] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:24:13.580] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:24:13.796] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:24:13.798] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-3] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:24:13.798] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:24:13.798] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:24:14.012] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:24:14.438] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:24:14.438] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:24:14.439] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-3] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[0]
+[2021-10-14 14:24:14.664] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-3] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:24:14.665] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-3] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:24:14.665] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-3] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[0]
+[2021-10-14 14:24:14.888] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-3] [49] [INFO ] ========================================== Start ==========================================
+[2021-10-14 14:24:14.889] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-3] [51] [INFO ] URL            : http://localhost:8090/api/v1/conference
+[2021-10-14 14:24:14.889] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-3] [53] [INFO ] Description    : 删除会议接口
+[2021-10-14 14:24:14.889] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-3] [55] [INFO ] HTTP Method    : DELETE
+[2021-10-14 14:24:14.889] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-3] [57] [INFO ] Class Method   : com.hongmai.clonfer.controller.api.v1.ConferenceController.deleteConference
+[2021-10-14 14:24:14.890] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-3] [59] [INFO ] IP             : 0:0:0:0:0:0:0:1
+[2021-10-14 14:24:14.890] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-3] [61] [INFO ] Request Args   : [["2323232"]]
+[2021-10-14 14:24:14.891] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-3] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.deleteBatchIds
+[2021-10-14 14:24:14.892] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] ==>  Preparing: DELETE FROM cp_conference_record WHERE uuid IN ( ? )
+[2021-10-14 14:24:14.892] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] ==> Parameters: 2323232(String)
+[2021-10-14 14:24:15.316] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-3] [137] [DEBUG] <==    Updates: 0
+[2021-10-14 14:24:15.317] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-3] [71] [INFO ] =========================================== End ===========================================
+
+[2021-10-14 14:24:15.317] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-3] [85] [INFO ] Response Args  : "操作成功"
+[2021-10-14 14:24:15.317] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-3] [87] [INFO ] Time-Consuming : 429 ms
+[2021-10-14 14:24:29.442] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:24:29.442] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:24:29.443] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-4] [35] [INFO ] 权限鉴别 -> 所需权限[1002]｜用户权限[ROLE_ANONYMOUS]
+[2021-10-14 14:27:29.327] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-6] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:27:29.327] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-6] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:08.002] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-7] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:28:08.003] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:28:08.005] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:28:08.219] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:28:08.221] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-7] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:28:08.222] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:28:08.222] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:28:08.435] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-7] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:28:08.858] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-7] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:08.859] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-7] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:08.859] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-7] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:08.859] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-7] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:08.868] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-7] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:08.869] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-7] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:13.895] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-9] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:28:13.896] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:28:13.896] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:28:14.108] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:28:14.110] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-9] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:28:14.110] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:28:14.110] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:28:14.322] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-9] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:28:14.751] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-9] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:14.751] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-9] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:14.751] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-9] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:14.752] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-9] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:14.754] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-9] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:14.754] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-9] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:23.432] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-10] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:28:23.432] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:28:23.433] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:28:23.646] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:28:23.648] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-10] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:28:23.648] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:28:23.649] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:28:23.864] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-10] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:28:24.289] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:24.289] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:24.289] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:24.290] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:24.291] [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver] [http-nio-8090-exec-10] [207] [WARN ] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+[2021-10-14 14:28:24.291] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-10] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:24.291] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-10] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:29.476] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-1] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:28:29.477] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:28:29.477] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:28:29.690] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:28:29.691] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-1] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:28:29.692] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:28:29.692] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:28:30.058] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:28:30.681] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:30.681] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:30.682] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-1] [35] [INFO ] 权限鉴别 -> 所需权限[1005]｜用户权限[0]
+[2021-10-14 14:28:30.909] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:30.910] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:28:30.910] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-1] [35] [INFO ] 权限鉴别 -> 所需权限[1005]｜用户权限[0]
+[2021-10-14 14:28:31.131] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-1] [49] [INFO ] ========================================== Start ==========================================
+[2021-10-14 14:28:31.132] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-1] [51] [INFO ] URL            : http://localhost:8090/api/v1/conference/detail/4
+[2021-10-14 14:28:31.132] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-1] [53] [INFO ] Description    : 查询会议详情接口
+[2021-10-14 14:28:31.132] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-1] [55] [INFO ] HTTP Method    : GET
+[2021-10-14 14:28:31.133] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-1] [57] [INFO ] Class Method   : com.hongmai.clonfer.controller.api.v1.ConferenceController.getConferenceDetail
+[2021-10-14 14:28:31.133] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-1] [59] [INFO ] IP             : 0:0:0:0:0:0:0:1
+[2021-10-14 14:28:31.133] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-1] [61] [INFO ] Request Args   : ["4"]
+[2021-10-14 14:28:31.135] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-1] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.selectById
+[2021-10-14 14:28:31.136] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] ==>  Preparing: SELECT uuid,title,sub_title,organization,guarantor,location,start_time,end_time,status,version,creator,operator,gmt_create,gmt_modified,ext_setting FROM cp_conference_record WHERE uuid=?
+[2021-10-14 14:28:31.136] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] ==> Parameters: 4(String)
+[2021-10-14 14:28:31.415] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-1] [137] [DEBUG] <==      Total: 0
+[2021-10-14 14:28:31.416] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-1] [71] [INFO ] =========================================== End ===========================================
+
+[2021-10-14 14:28:31.430] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-1] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:28:31.430] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-1] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:29:09.580] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-2] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:29:09.580] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-2] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:29:09.581] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-2] [35] [INFO ] 权限鉴别 -> 所需权限[1005]｜用户权限[ROLE_ANONYMOUS]
+[2021-10-14 14:29:16.518] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:29:16.518] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:29:16.519] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:29:16.732] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:29:16.733] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:29:16.733] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:29:16.734] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:29:16.947] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:29:17.372] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:29:17.372] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:29:17.372] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-4] [35] [INFO ] 权限鉴别 -> 所需权限[1005]｜用户权限[0]
+[2021-10-14 14:29:17.593] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-4] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:29:17.593] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-4] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:29:17.594] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-4] [35] [INFO ] 权限鉴别 -> 所需权限[1005]｜用户权限[0]
+[2021-10-14 14:29:17.816] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [49] [INFO ] ========================================== Start ==========================================
+[2021-10-14 14:29:17.816] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [51] [INFO ] URL            : http://localhost:8090/api/v1/conference/detail/187545ba-0f78-4c7e-bd00-017e095976f7
+[2021-10-14 14:29:17.816] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [53] [INFO ] Description    : 查询会议详情接口
+[2021-10-14 14:29:17.818] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [55] [INFO ] HTTP Method    : GET
+[2021-10-14 14:29:17.819] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [57] [INFO ] Class Method   : com.hongmai.clonfer.controller.api.v1.ConferenceController.getConferenceDetail
+[2021-10-14 14:29:17.819] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [59] [INFO ] IP             : 0:0:0:0:0:0:0:1
+[2021-10-14 14:29:17.821] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [61] [INFO ] Request Args   : ["187545ba-0f78-4c7e-bd00-017e095976f7"]
+[2021-10-14 14:29:17.824] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.selectById
+[2021-10-14 14:29:17.824] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,title,sub_title,organization,guarantor,location,start_time,end_time,status,version,creator,operator,gmt_create,gmt_modified,ext_setting FROM cp_conference_record WHERE uuid=?
+[2021-10-14 14:29:17.824] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 187545ba-0f78-4c7e-bd00-017e095976f7(String)
+[2021-10-14 14:29:18.040] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:29:18.097] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferencePipelineMapper.selectList
+[2021-10-14 14:29:18.098] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,cp_conference_record_uuid,sequence,action,owner,name,status,applied_population,ext_info FROM cp_conference_pipeline WHERE (cp_conference_record_uuid = ?)
+[2021-10-14 14:29:18.098] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 187545ba-0f78-4c7e-bd00-017e095976f7(String)
+[2021-10-14 14:29:18.317] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 7
+[2021-10-14 14:29:18.322] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:29:18.323] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (uuid = ?)
+[2021-10-14 14:29:18.323] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 986b46fc-800b-4ba3-aa14-9757dd2db2e5(String)
+[2021-10-14 14:29:18.539] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:29:18.566] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:29:18.566] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (uuid = ?)
+[2021-10-14 14:29:18.567] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 986b46fc-800b-4ba3-aa14-9757dd2db2e5(String)
+[2021-10-14 14:29:18.779] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:29:18.780] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:29:18.781] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (uuid = ?)
+[2021-10-14 14:29:18.781] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 986b46fc-800b-4ba3-aa14-9757dd2db2e5(String)
+[2021-10-14 14:29:18.993] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:29:18.995] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:29:18.995] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (uuid = ?)
+[2021-10-14 14:29:18.996] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 986b46fc-800b-4ba3-aa14-9757dd2db2e5(String)
+[2021-10-14 14:29:19.208] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:29:19.210] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:29:19.210] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (uuid = ?)
+[2021-10-14 14:29:19.211] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 986b46fc-800b-4ba3-aa14-9757dd2db2e5(String)
+[2021-10-14 14:29:19.423] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:29:19.425] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:29:19.425] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (uuid = ?)
+[2021-10-14 14:29:19.426] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 986b46fc-800b-4ba3-aa14-9757dd2db2e5(String)
+[2021-10-14 14:29:19.638] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:29:19.640] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-4] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:29:19.640] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (uuid = ?)
+[2021-10-14 14:29:19.641] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] ==> Parameters: 986b46fc-800b-4ba3-aa14-9757dd2db2e5(String)
+[2021-10-14 14:29:19.853] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-4] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:29:19.855] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [71] [INFO ] =========================================== End ===========================================
+
+[2021-10-14 14:29:19.861] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [85] [INFO ] Response Args  : {"uuid":"187545ba-0f78-4c7e-bd00-017e095976f7","title":"测试展会","subTitle":"测试展会副标题","organization":"31c0676f-387c-4c8e-8f0c-7924ecd61aak","guarantor":"{\"chairman\":\"986b46fc-800b-4ba3-aa14-9757dd2db2e5\",\"viceChairman\":\"986b46fc-800b-4ba3-aa14-9757dd2db2e5\"}","location":"{\"city\":\"青岛\",\"coordinate\":\"XXX\",\"province\":\"山东\",\"venue\":\"测试场馆\"}","startTime":"Sep 22, 2021 5:00:00 PM","endTime":"Sep 27, 2021 5:00:00 AM","status":"INIT","creator":"Joel","pipeline":[{"uuid":"2ed8d420-4dad-451f-8930-ada970bb1437","sequence":4,"name":"嘉宾抵达","action":{"title":"人工推进","code":"MANUAL"},"owner":{"uuid":"986b46fc-800b-4ba3-aa14-9757dd2db2e5","fullname":"王嘉维"},"appliedPopulation":[{"title":"嘉宾","code":"GUEST"}]},{"uuid":"562ab72b-4df7-4476-842c-53bbc43546c2","sequence":5,"name":"参会签到","action":{"title":"人工推进","code":"MANUAL"},"owner":{"uuid":"986b46fc-800b-4ba3-aa14-9757dd2db2e5","fullname":"王嘉维"},"appliedPopulation":[{"title":"嘉宾","code":"GUEST"}]},{"uuid":"648bc36f-7112-463f-b370-ed68d5e09109","sequence":6,"name":"嘉宾返回","action":{"title":"人工推进","code":"MANUAL"},"owner":{"uuid":"986b46fc-800b-4ba3-aa14-9757dd2db2e5","fullname":"王嘉维"},"appliedPopulation":[{"title":"嘉宾","code":"GUEST"}]},{"uuid":"d0ed644a-50b3-447f-b83f-ed24a808e6bd","sequence":7,"name":"反馈收集","action":{"title":"人工推进","code":"MANUAL"},"owner":{"uuid":"986b46fc-800b-4ba3-aa14-9757dd2db2e5","fullname":"王嘉维"},"appliedPopulation":[{"title":"嘉宾","code":"GUEST"}]},{"uuid":"d6a7cd9b-cb41-4c29-8d76-51243e659328","sequence":1,"name":"参会确认","action":{"title":"人工推进","code":"MANUAL"},"owner":{"uuid":"986b46fc-800b-4ba3-aa14-9757dd2db2e5","fullname":"王嘉维"},"appliedPopulation":[{"title":"嘉宾","code":"GUEST"}]},{"uuid":"d7b59af1-0b53-4ed6-9da4-e4409c91e33f","sequence":3,"name":"证件制作","action":{"title":"人工推进","code":"MANUAL"},"owner":{"uuid":"986b46fc-800b-4ba3-aa14-9757dd2db2e5","fullname":"王嘉维"},"appliedPopulation":[{"title":"嘉宾","code":"GUEST"}]},{"uuid":"ea2afb64-92ea-4372-9ec2-bfa44269c368","sequence":2,"name":"信息录入","action":{"title":"人工推进","code":"MANUAL"},"owner":{"uuid":"986b46fc-800b-4ba3-aa14-9757dd2db2e5","fullname":"王嘉维"},"appliedPopulation":[{"title":"嘉宾","code":"GUEST"}]}],"gmtCreate":"Sep 14, 2021 6:41:05 PM","gmtModified":"Sep 14, 2021 6:41:05 PM"}
+[2021-10-14 14:29:19.862] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-4] [87] [INFO ] Time-Consuming : 2046 ms
+[2021-10-14 14:35:58.198] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-6] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:35:58.199] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:35:58.200] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:35:58.413] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:35:58.414] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-6] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseRoleMapper.selectOne
+[2021-10-14 14:35:58.415] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,code,resource,ext_info FROM cp_base_role WHERE (code = ?)
+[2021-10-14 14:35:58.415] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==> Parameters: 2(Integer)
+[2021-10-14 14:35:58.628] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:35:59.052] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-6] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:35:59.053] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-6] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:35:59.053] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-6] [35] [INFO ] 权限鉴别 -> 所需权限[1004]｜用户权限[0]
+[2021-10-14 14:35:59.276] [com.hongmai.clonfer.security.AuthFilter] [http-nio-8090-exec-6] [41] [INFO ] ---AuthFilter---
+[2021-10-14 14:35:59.276] [com.hongmai.clonfer.security.MySecurityMetadataSource] [http-nio-8090-exec-6] [32] [INFO ] ---MySecurityMetadataSource---
+[2021-10-14 14:35:59.277] [com.hongmai.clonfer.security.MyDecisionManager] [http-nio-8090-exec-6] [35] [INFO ] 权限鉴别 -> 所需权限[1004]｜用户权限[0]
+[2021-10-14 14:35:59.497] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-6] [49] [INFO ] ========================================== Start ==========================================
+[2021-10-14 14:35:59.498] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-6] [51] [INFO ] URL            : http://localhost:8090/api/v1/conference/page/1
+[2021-10-14 14:35:59.498] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-6] [53] [INFO ] Description    : 查询会议列表接口
+[2021-10-14 14:35:59.498] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-6] [55] [INFO ] HTTP Method    : GET
+[2021-10-14 14:35:59.499] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-6] [57] [INFO ] Class Method   : com.hongmai.clonfer.controller.api.v1.ConferenceController.getConferencePage
+[2021-10-14 14:35:59.499] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-6] [59] [INFO ] IP             : 0:0:0:0:0:0:0:1
+[2021-10-14 14:35:59.499] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-6] [61] [INFO ] Request Args   : [1]
+[2021-10-14 14:35:59.500] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-6] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseUserMapper.selectOne
+[2021-10-14 14:35:59.501] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==>  Preparing: SELECT uuid,username,password,fullname,avatar,email,role,orginazation_uuid,ability,gmt_reg,ip_reg,gmt_last_login,ip_last_login,status,ext_info FROM cp_base_user WHERE (username = ?)
+[2021-10-14 14:35:59.501] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==> Parameters: Joel(String)
+[2021-10-14 14:35:59.713] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:35:59.716] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-6] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.selectPage_mpCount
+[2021-10-14 14:35:59.716] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==>  Preparing: SELECT COUNT(1) FROM cp_conference_record WHERE (organization = ?)
+[2021-10-14 14:35:59.717] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String)
+[2021-10-14 14:35:59.929] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:35:59.931] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-6] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpConferenceRecordMapper.selectPage
+[2021-10-14 14:35:59.932] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==>  Preparing: SELECT uuid, title, sub_title, organization, guarantor, location, start_time, end_time, status, version, creator, operator, gmt_create, gmt_modified, ext_setting FROM cp_conference_record WHERE (organization = ?) ORDER BY gmt_create DESC LIMIT ?
+[2021-10-14 14:35:59.932] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String), 10(Long)
+[2021-10-14 14:36:00.145] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] <==      Total: 2
+[2021-10-14 14:36:00.148] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-6] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseOrginazationMapper.selectOne
+[2021-10-14 14:36:00.148] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,category,owner,member,gmt_create,plan,status,ext_info FROM cp_base_orginazation WHERE (uuid = ?)
+[2021-10-14 14:36:00.149] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String)
+[2021-10-14 14:36:00.361] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:36:00.363] [com.hongmai.clonfer.security.plugin.MyPaginationInterceptor] [http-nio-8090-exec-6] [41] [INFO ] mapper: ==> com.hongmai.clonfer.mapper.CpBaseOrginazationMapper.selectOne
+[2021-10-14 14:36:00.363] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==>  Preparing: SELECT uuid,name,category,owner,member,gmt_create,plan,status,ext_info FROM cp_base_orginazation WHERE (uuid = ?)
+[2021-10-14 14:36:00.363] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] ==> Parameters: 31c0676f-387c-4c8e-8f0c-7924ecd61aak(String)
+[2021-10-14 14:36:00.575] [org.apache.ibatis.logging.jdbc.BaseJdbcLogger] [http-nio-8090-exec-6] [137] [DEBUG] <==      Total: 1
+[2021-10-14 14:36:00.576] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-6] [71] [INFO ] =========================================== End ===========================================
+
+[2021-10-14 14:36:00.578] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-6] [85] [INFO ] Response Args  : {"records":[{"uuid":"959b6225-e29a-4d11-8797-2a7c76258b37","title":"测试会议","subTitle":"测试会议副标题","organization":"测试企业","gmtCreate":"Wed Sep 15 19:29:19 BST 2021","status":"INIT"},{"uuid":"187545ba-0f78-4c7e-bd00-017e095976f7","title":"测试展会","subTitle":"测试展会副标题","organization":"测试企业","gmtCreate":"Tue Sep 14 18:41:05 BST 2021","status":"INIT"}],"total":2,"size":10,"current":1,"orders":[{"column":"gmt_create","asc":false}],"optimizeCountSql":true,"isSearchCount":true,"hitCount":false}
+[2021-10-14 14:36:00.578] [com.hongmai.clonfer.annotation.WebLogAspect] [http-nio-8090-exec-6] [87] [INFO ] Time-Consuming : 1081 ms
+[2021-10-14 23:15:52.677] [com.zaxxer.hikari.pool.HikariPool$HouseKeeper] [HikariPool-1 housekeeper] [787] [WARN ] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m24s11ms).

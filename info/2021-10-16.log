@@ -1,0 +1,4 @@
+[2021-10-16 05:05:13.844] [com.zaxxer.hikari.pool.HikariPool$HouseKeeper] [HikariPool-1 housekeeper] [779] [WARN ] HikariPool-1 - Retrograde clock change detected (housekeeper delta=27s900ms), soft-evicting connections from pool.
+[2021-10-16 13:40:09.828] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [SpringContextShutdownHook] [218] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2021-10-16 13:40:09.851] [com.zaxxer.hikari.HikariDataSource] [SpringContextShutdownHook] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2021-10-16 13:40:09.864] [com.zaxxer.hikari.HikariDataSource] [SpringContextShutdownHook] [352] [INFO ] HikariPool-1 - Shutdown completed.
